@@ -9,7 +9,7 @@
 
 > 포트폴리오 관점의 핵심은 `현장 장비 사용 현황을 누구나 확인할 수 있게 만든 운영 도구`입니다.
 
-![대시보드 스크린샷](public/screenshot.png)
+![대시보드 스크린샷](public/dashboard.png)
 
 ## 문제 정의
 
@@ -47,6 +47,19 @@ flowchart LR
   H --> I["상태, 남은 시간, 예약 현황 확인"]
 ```
 
+장비별 QR 스티커를 출력해 부착하고, 현장에서 휴대폰으로 스캔하면 해당 장비의
+모바일 빠른 입력 화면으로 바로 이동합니다.
+
+**QR 스티커 출력 화면** — 장비별 모바일 입력 QR을 한 번에 인쇄
+
+![QR 스티커 출력](public/qr-sticker.png)
+
+**모바일 빠른 입력** — QR을 스캔하면 열리는 현장 작업 등록 화면
+
+<p align="center">
+  <img src="public/mobile.png" alt="모바일 빠른 입력 화면" width="320" />
+</p>
+
 ## 시스템 구조
 
 ```mermaid
@@ -57,7 +70,7 @@ flowchart TB
     Print["QR 스티커 출력 화면"]
   end
 
-  subgraph App["OpenAI Sites / Vinext App"]
+  subgraph App["Vinext App · Cloudflare Workers"]
     API["/api/equipment"]
     UI["React Components"]
     QR["QR URL 생성"]
@@ -94,7 +107,7 @@ flowchart TB
 | Styling | CSS, responsive layout |
 | Backend | Server API route |
 | Database | Cloudflare D1, Drizzle ORM |
-| Deployment Target | OpenAI Sites compatible runtime |
+| Deployment Target | Cloudflare Workers (Vinext) |
 | UX | Desktop dashboard, mobile quick entry, print layout |
 
 ## 설계 포인트
@@ -123,9 +136,9 @@ npm run build
 
 ## Deployment
 
-OpenAI Sites 또는 호환되는 Vinext 배포 환경에서 D1 바인딩 이름을 `DB`로
-설정해 배포합니다. `.openai/hosting.json`에는 특정 프로젝트 ID를 넣지
-않았으므로, 새 Sites 프로젝트에 맞게 연결해 사용할 수 있습니다.
+Cloudflare Workers(Vinext) 환경에 배포합니다. D1 데이터베이스를 생성하고
+바인딩 이름을 `DB`로 연결한 뒤, `drizzle/` 마이그레이션을 적용하면 됩니다.
+로컬 개발에서는 `vite.config.ts`의 플레이스홀더 바인딩으로 동작합니다.
 
 ## Useful Commands
 

@@ -1,0 +1,50 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="#F5F7FA"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="white" stroke="#D8E1EC"/>
+  <text x="88" y="116" fill="#0F172A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="42" font-weight="800">장비관리 프로젝트</text>
+  <text x="88" y="154" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="19">3D 프린터와 멸균 장비의 작업/예약 현황을 실시간으로 공유하는 운영 대시보드</text>
+
+  <rect x="88" y="204" width="230" height="126" rx="18" fill="#EEF5FF" stroke="#C9DAF8"/>
+  <text x="112" y="244" fill="#24528A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="18" font-weight="700">문제</text>
+  <text x="112" y="278" fill="#172033" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="26" font-weight="800">장비 현황 파편화</text>
+  <text x="112" y="307" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">작업 시간, 예약, 담당팀을</text>
+  <text x="112" y="328" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">한 화면에서 확인하기 어려움</text>
+
+  <rect x="360" y="204" width="230" height="126" rx="18" fill="#F0FDF4" stroke="#BBE7C7"/>
+  <text x="384" y="244" fill="#237449" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="18" font-weight="700">해결</text>
+  <text x="384" y="278" fill="#172033" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="26" font-weight="800">공용 대시보드</text>
+  <text x="384" y="307" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">상태, 진행률, 남은 시간, 예약을</text>
+  <text x="384" y="328" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">모바일과 데스크톱에서 동기화</text>
+
+  <rect x="632" y="204" width="230" height="126" rx="18" fill="#FFF7ED" stroke="#F4D1A8"/>
+  <text x="656" y="244" fill="#9A5B15" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="18" font-weight="700">입력</text>
+  <text x="656" y="278" fill="#172033" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="26" font-weight="800">QR 빠른 등록</text>
+  <text x="656" y="307" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">장비 라벨 QR을 스캔해</text>
+  <text x="656" y="328" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">작업 시작과 예약을 즉시 입력</text>
+
+  <rect x="904" y="204" width="208" height="126" rx="18" fill="#F8FAFC" stroke="#D8E1EC"/>
+  <text x="928" y="244" fill="#475569" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="18" font-weight="700">저장소</text>
+  <text x="928" y="278" fill="#172033" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="26" font-weight="800">API + D1</text>
+  <text x="928" y="307" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">localStorage가 아닌</text>
+  <text x="928" y="328" fill="#52637A" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">서버 저장소 기준 동기화</text>
+
+  <path d="M318 267H360" stroke="#8EA4BE" stroke-width="3" stroke-linecap="round"/>
+  <path d="M590 267H632" stroke="#8EA4BE" stroke-width="3" stroke-linecap="round"/>
+  <path d="M862 267H904" stroke="#8EA4BE" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="88" y="386" width="1024" height="116" rx="18" fill="#0F172A"/>
+  <text x="124" y="431" fill="#E2E8F0" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="20" font-weight="700">핵심 경험</text>
+  <text x="124" y="468" fill="white" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="31" font-weight="800">장비를 클릭해 작업 입력 → QR로 모바일 입력 → 대시보드가 주기적으로 반영</text>
+  <text x="124" y="492" fill="#B7C5D6" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="16">운영자가 따로 연락하지 않아도 누구나 현재 사용 가능 여부와 다음 예약을 확인할 수 있습니다.</text>
+
+  <rect x="88" y="530" width="170" height="26" rx="13" fill="#E9EEF5"/>
+  <text x="108" y="549" fill="#334155" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="700">React 19</text>
+  <rect x="274" y="530" width="170" height="26" rx="13" fill="#E9EEF5"/>
+  <text x="294" y="549" fill="#334155" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="700">Next 16 / Vinext</text>
+  <rect x="460" y="530" width="170" height="26" rx="13" fill="#E9EEF5"/>
+  <text x="480" y="549" fill="#334155" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="700">Cloudflare D1</text>
+  <rect x="646" y="530" width="170" height="26" rx="13" fill="#E9EEF5"/>
+  <text x="666" y="549" fill="#334155" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="700">Server API</text>
+  <rect x="832" y="530" width="170" height="26" rx="13" fill="#E9EEF5"/>
+  <text x="852" y="549" fill="#334155" font-family="Arial, 'Apple SD Gothic Neo', sans-serif" font-size="14" font-weight="700">Responsive UI</text>
+</svg>
